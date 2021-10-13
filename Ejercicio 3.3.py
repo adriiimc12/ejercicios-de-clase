@@ -13,5 +13,5 @@ while x < 4:
     x = x + 1
     
 lista .sort()
-print("El numero mas grande es",lista[0],"y el mas pequeño es",lista[4])
+print("El numero mas grande es",lista[4],"y el mas pequeño es",lista[0])
 
