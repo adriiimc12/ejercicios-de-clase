@@ -30,7 +30,7 @@ def borrar_archivo():
     res = int(input())
     if (res == 1):
         fichero = open('fichero.txt','w')
-        texto = "   "
+        texto = ""
         fichero.write(texto)
         fichero.close()
     
