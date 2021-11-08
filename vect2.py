@@ -85,7 +85,7 @@ def usuarionum_vector():
 def creciente_vector():
     vector = []
     i = 0
-    x = 0
+    x = -9999
     while i < 15:
         print("Escriba un numero mayor que", x,": ")
         res = int(input())
