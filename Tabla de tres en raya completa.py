@@ -27,12 +27,12 @@ def turnousuario():
     global colum_usu
     colum_usu = int(input()) - 1
     comprobador()
-        
+   
 def comprobarganador():
-    if((tablero[0][0] and tablero[0][1] and tablero[0][2] == 'X') or (tablero[1][0] and tablero[1][1] and tablero[1][2] == 'X') or (tablero[2][0] and tablero[2][1] and tablero[2][2] == 'X') or (tablero[0][0] and tablero[1][0] and tablero[2][0] == 'X') or (tablero[0][1] and tablero[1][1] and tablero[2][1] == 'X') or (tablero[0][2] and tablero[1][2] and tablero[2][2] == 'X') or (tablero[0][0] and tablero[1][1] and tablero[2][2] == 'X') or (tablero[0][2] and tablero[1][1] and tablero[2][0] == 'X')):
+    if((tablero[0][0]== 'X' and tablero[0][1]== 'X' and tablero[0][2] == 'X') or (tablero[1][0]== 'X' and tablero[1][1]== 'X' and tablero[1][2] == 'X') or (tablero[2][0]== 'X' and tablero[2][1]== 'X' and tablero[2][2] == 'X') or (tablero[0][0]== 'X' and tablero[1][0]== 'X' and tablero[2][0] == 'X') or (tablero[0][1]== 'X' and tablero[1][1]== 'X' and tablero[2][1] == 'X') or (tablero[0][2]== 'X' and tablero[1][2]== 'X' and tablero[2][2] == 'X') or (tablero[0][0]== 'X' and tablero[1][1]== 'X' and tablero[2][2] == 'X') or (tablero[0][2]== 'X' and tablero[1][1]== 'X' and tablero[2][0] == 'X')):
         print("Jugador 1, ¡Eres el ganador!")
         return True
-    elif((tablero[0][0] and tablero[0][1] and tablero[0][2] == 'O') or (tablero[1][0] and tablero[1][1] and tablero[1][2] == 'O') or (tablero[2][0] and tablero[2][1] and tablero[2][2] == 'O') or (tablero[0][0] and tablero[1][0] and tablero[2][0] == 'O') or (tablero[0][1] and tablero[1][1] and tablero[2][1] == 'O') or (tablero[0][2] and tablero[1][2] and tablero[2][2] == 'O') or (tablero[0][0] and tablero[1][1] and tablero[2][2] == 'O') or (tablero[0][2] and tablero[1][1] and tablero[2][0] == 'O')):
+    elif((tablero[0][0]== 'O' and tablero[0][1]== 'O' and tablero[0][2] == 'O') or (tablero[1][0]== 'O' and tablero[1][1]== 'O' and tablero[1][2] == 'O') or (tablero[2][0]== 'O' and tablero[2][1]== 'O' and tablero[2][2] == 'O') or (tablero[0][0]== 'O' and tablero[1][0]== 'O' and tablero[2][0] == 'O') or (tablero[0][1]== 'O' and tablero[1][1]== 'O' and tablero[2][1] == 'O') or (tablero[0][2]== 'O' and tablero[1][2]== 'O' and tablero[2][2] == 'O') or (tablero[0][0]== 'O' and tablero[1][1]== 'O' and tablero[2][2] == 'O') or (tablero[0][2]== 'O' and tablero[1][1]== 'O' and tablero[2][0] == 'O')):
         print("Jugador 2, ¡Eres el ganador!")
         return True
     else:
@@ -52,8 +52,7 @@ while contador < 9:
     else:
         mostrartablero()
         contador += 1
-        comprobarganador()
-
-
-'''((tablero[0][0] == 'X' or 'O') and (tablero[0][1] == 'X' or 'O') and (tablero[0][2] == 'X' or 'O') and (tablero[1][0] == 'X' or 'O') and (tablero[1][1] == 'X' or 'O') and (tablero[1][2] == 'X' or 'O') and (tablero[2][0] == 'X' or 'O') and (tablero[2][1] == 'X' or 'O') and (tablero[2][2] == 'X' or 'O'))'''
-        
+x = 0
+while x < len(tablero):
+    print(tablero[x])
+    x += 1
